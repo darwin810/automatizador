@@ -1,19 +1,25 @@
 import requests
+import PyPDF2
 
-ruta = input("Ingrese la ruta del archivo .txt: ")
+ruta = input("Ingrese la ruta del archivo PDF: ")
 
-# Leer archivo
-with open(ruta, "r", encoding="utf-8") as archivo:
-    texto = archivo.read()
+# Leer PDF
+texto = ""
+with open(ruta, "rb") as archivo:
+    lector = PyPDF2.PdfReader(archivo)
+    
+    for pagina in lector.pages:
+        texto += pagina.extract_text()
 
+# Prompt
 prompt = f"""
-Analiza el siguiente texto y responde en este formato:
+Analiza el siguiente documento y responde en este formato:
 
 Resumen: (breve)
 Ideas principales: (en lista)
 Conclusión: (corta)
 
-Texto:
+Documento:
 {texto}
 """
 
@@ -29,5 +35,5 @@ response = requests.post(
 data = response.json()
 resultado = data["response"]
 
-print("\n--- ANÁLISIS DEL DOCUMENTO ---")
+print("\n--- ANÁLISIS DEL PDF ---")
 print(resultado.strip())
