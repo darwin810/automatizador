@@ -49,6 +49,7 @@ def analizar_pdf():
 
     guardar_resultado(resultado)
 
+
 ventana = tk.Tk()
 ventana.title("Analizador de Documentos con IA")
 ventana.geometry("600x500")
