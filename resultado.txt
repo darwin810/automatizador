@@ -1,0 +1,11 @@
+Resumen: Lista de estudiantes activos con sus datos personales y matrícula en el 5to de secundaria.
+
+Ideas principales:
+1. Nombre completo de los estudiantes activos.
+2. DNI (Documento Nacional de Identidad) de los estudiantes.
+3. Apellidos y nombres de los apoderados.
+4. Número celular de los apoderados.
+5. Matrícula de cada estudiante en la institución escolar.
+6. Grado de educación: 5to de Secundaria.
+
+Conclusión: Este documento proporciona una lista detallada de los estudiantes activos en el 5to de secundaria, incluyendo sus datos personales y los contactos de sus apoderados.
