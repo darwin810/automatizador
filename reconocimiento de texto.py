@@ -49,16 +49,13 @@ def analizar_pdf():
 
     guardar_resultado(resultado)
 
-# Ventana
 ventana = tk.Tk()
 ventana.title("Analizador de Documentos con IA")
 ventana.geometry("600x500")
 
-# Botón
 btn = tk.Button(ventana, text="Seleccionar PDF y Analizar", command=analizar_pdf)
 btn.pack(pady=10)
 
-# Área de texto
 resultado_texto = tk.Text(ventana, wrap="word")
 resultado_texto.pack(expand=True, fill="both")
 
