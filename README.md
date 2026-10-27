@@ -1,4 +1,4 @@
-
+  
 # Automatizador con Python 🐍
 
 Proyecto de automatización desarrollado en Python.
@@ -15,3 +15,16 @@ Proyecto de automatización desarrollado en Python.
 
 ## Autor
 Desarrollado por darwin810.
+
+
+## Objetivo del proyecto
+
+Este proyecto tiene como objetivo explorar la automatización de tareas utilizando Python.
+
+## Mejoras futuras
+
+- Mejorar la organización del código.
+- Agregar documentación técnica.
+- Implementar nuevas funcionalidades.
+- Realizar pruebas de funcionamiento.
+
